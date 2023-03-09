@@ -5,10 +5,17 @@ public class Producto{
     
     private boolean envaseReciclable;
     
-    public Producto (String nombre, boolean reciclable){
+    private boolean sinGluten;
+    
+    public Producto (String nombre, boolean reciclable, boolean gluten){
         nombreProducto = nombre;
         envaseReciclable = reciclable;
+        sinGluten = gluten;
         precioProducto = 2.50;
+    }
+    
+    public void setConGluten(){
+        sinGluten = false;
     }
     
     public String getNombreProducto(){
@@ -43,13 +50,16 @@ public class Producto{
     
     public void imprimirDatosProducto(){
         String reciclable = "";
-        if (envaseReciclable == false){
+        String celiacos ="";
+        if (envaseReciclable == false && sinGluten==false){
             reciclable = "No es reciclable";
+            celiacos = "contiene gluten";
         }
         else{
             reciclable = "Si es reciclable";
+            celiacos="sin gluten";
         }
-        System.out.println ("Datos del producto:" + nombreProducto +" "+ reciclable +" " + precioProducto);
+        System.out.println ("Datos del producto:" + nombreProducto +" "+ reciclable +" " + precioProducto+" "+ celiacos);
     }
     
     public String getDatosProduto(){
