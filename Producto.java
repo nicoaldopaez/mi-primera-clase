@@ -7,15 +7,22 @@ public class Producto{
     
     private boolean sinGluten;
     
+    private int temperatura;
+    
     public Producto (String nombre, boolean reciclable, boolean gluten){
         nombreProducto = nombre;
         envaseReciclable = reciclable;
         sinGluten = gluten;
         precioProducto = 2.50;
+        temperatura = 30;
     }
     
     public void setConGluten(){
         sinGluten = false;
+    }
+    
+    public void modificarTemperatura(int nuevoValor){
+        temperatura = nuevoValor ; 
     }
     
     public String getNombreProducto(){
@@ -59,7 +66,7 @@ public class Producto{
             reciclable = "Si es reciclable";
             celiacos="sin gluten";
         }
-        System.out.println ("Datos del producto:" + nombreProducto +" "+ reciclable +" " + precioProducto+" "+ celiacos);
+        System.out.println ("Datos del producto:" + nombreProducto +" "+"Tipo de envase:"+ reciclable +" " +"Precio:"+ precioProducto +" "+"Con/Sin gluten:"+ celiacos +" "+"temperatura:"+ temperatura);
     }
     
     public String getDatosProduto(){
