@@ -7,11 +7,18 @@ public class Producto{
     
     private boolean sinGluten;
     
+    private double dimensionEnvase;
+    
     public Producto (String nombre, boolean reciclable, boolean gluten){
         nombreProducto = nombre;
         envaseReciclable = reciclable;
         sinGluten = gluten;
         precioProducto = 2.50;
+        dimensionEnvase = 10.50;
+    }
+    
+    public void cambiarDimension(double nuevaDimension){
+        dimensionEnvase = nuevaDimension;  
     }
     
     public void setConGluten(){
@@ -59,7 +66,7 @@ public class Producto{
             reciclable = "Si es reciclable";
             celiacos="sin gluten";
         }
-        System.out.println ("Datos del producto:" + nombreProducto +" "+ reciclable +" " + precioProducto+" "+ celiacos);
+        System.out.println ("Datos del producto:" + nombreProducto +" "+ reciclable +" " + precioProducto+" "+ celiacos+" "+"Dimension del envase en cm2:"+" "+dimensionEnvase);
     }
     
     public String getDatosProduto(){
