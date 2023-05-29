@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Producto
+<<<<<<< HEAD
 comment1.params=nombre\ reciclable
 comment1.target=Producto(java.lang.String,\ boolean)
 comment2.params=
@@ -19,3 +20,28 @@ comment8.target=void\ imprimirDatosProducto()
 comment9.params=
 comment9.target=java.lang.String\ getDatosProduto()
 numComments=10
+=======
+comment1.params=nombre\ reciclable\ gluten
+comment1.target=Producto(java.lang.String,\ boolean,\ boolean)
+comment10.params=
+comment10.target=void\ imprimirDatosProducto()
+comment11.params=
+comment11.target=java.lang.String\ getDatosProduto()
+comment2.params=
+comment2.target=void\ setConGluten()
+comment3.params=nuevoValor
+comment3.target=void\ modificarTemperatura(int)
+comment4.params=
+comment4.target=java.lang.String\ getNombreProducto()
+comment5.params=
+comment5.target=boolean\ getEnvasereciclable()
+comment6.params=
+comment6.target=double\ getPrecioproducto()
+comment7.params=Hamburguesas
+comment7.target=void\ setNombreproducto(java.lang.String)
+comment8.params=
+comment8.target=void\ aplicarIva()
+comment9.params=
+comment9.target=void\ cambiarEnvase()
+numComments=12
+>>>>>>> 516ff1325eea1991a3b932e5ef531fa81cad9dce

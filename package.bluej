@@ -4,8 +4,13 @@ editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
 objectbench.height=185
+<<<<<<< HEAD
 objectbench.width=1133
 package.divider.horizontal=0.6
+=======
+objectbench.width=1094
+package.divider.horizontal=0.5794736842105264
+>>>>>>> 516ff1325eea1991a3b932e5ef531fa81cad9dce
 package.divider.vertical=0.799163179916318
 package.editor.height=757
 package.editor.width=1780
